@@ -465,6 +465,7 @@ public class MainActivity extends Activity {
                 e.printStackTrace();
             } catch (InterruptedException e) {
                 e.printStackTrace();
+                Thread.currentThread().interrupt();
             }
             return null;
         }
